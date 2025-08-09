@@ -1,0 +1,31 @@
+mmap-mag: true
+compute-B0: B0
+output: GRE_3T_premask_nomask_global
+mask-unwrapped: false
+weights: romeo3
+max-seeds: 1
+B0-phase-weighting: phase_snr
+individual-unwrapping: false
+no-phase-rescale: false
+fix-ge-phase: false
+write-quality-all: false
+correct-global: true
+write-quality: true
+temporal-uncertain-unwrapping: 0.0
+magnitude: GRE_3Tmag.nii
+phase-offset-correction: monopolar
+no-mmap: false
+wrap-addition: 0.0
+write-phase-offsets: true
+verbose: true
+neco: 6
+correct-regions: false
+merge-regions: false
+template: 1
+threshold: Inf
+mmap-phase: true
+multi-channel: false
+phase: GRE_3Tph.nii
+filename: unwrapped
+Arguments: -p GRE_3Tph.nii -m GRE_3Tmag.nii -k nomask -t [5,10,16,21,26,31] -v -q -g --phase-offset-correction on --write-phase-offset -B -o GRE_3T_premask_nomask_global
+RomeoApp version: 4.7.1
